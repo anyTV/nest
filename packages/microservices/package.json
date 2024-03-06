@@ -26,13 +26,13 @@
     "@nestjs/core": "7.6.18"
   },
   "peerDependencies": {
+    "@grpc/grpc-js": "*",
     "@nestjs/common": "^7.0.0",
     "@nestjs/core": "^7.0.0",
     "@nestjs/websockets": "^7.0.0",
     "amqp-connection-manager": "*",
     "amqplib": "*",
     "cache-manager": "*",
-    "grpc": "*",
     "kafkajs": "*",
     "mqtt": "*",
     "nats": "*",
