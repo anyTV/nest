@@ -46,8 +46,8 @@ export class ServerGrpc extends Server implements CustomTransportStrategy {
     const protoLoader =
       this.getOptionsProp(options, 'protoLoader') || GRPC_DEFAULT_PROTO_LOADER;
 
-    grpcPackage = this.loadPackage('@grpc-js', ServerGrpc.name, () =>
-      require('@grpc-js'),
+    grpcPackage = this.loadPackage('@grpc/grpc-js', ServerGrpc.name, () =>
+      require('@grpc/grpc-js'),
     );
     grpcProtoLoaderPackage = this.loadPackage(protoLoader, ServerGrpc.name);
   }
